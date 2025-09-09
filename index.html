@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website to test Agentforce deployment to an external website.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <section>
+        <p>This is a test website.</p>
+    </section>
+    <footer>
+        <p>Contact: myemail@example.com</p>
+    </footer>
+    <script type='text/javascript'>
+        function initEmbeddedMessaging() {
+            try {
+                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+                embeddedservice_bootstrap.init(
+                    '00DKd000006mBkT',
+                    'SDO_Messaging_for_Web',
+                    'https://amyerwin-241117-595-demo.my.site.com/ESWSDOMessagingforWeb1731865188511',
+                    {
+                        scrt2URL: 'https://amyerwin-241117-595-demo.my.salesforce-scrt.com'
+                    }
+                );
+            } 
+            catch (err) {
+                console.error('Error loading Embedded Messaging: ', err);
+            }
+        };
+    </script>
+    <script type='text/javascript' src='https://amyerwin-241117-595-demo.my.site.com/ESWSDOMessagingforWeb1731865188511/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</body>
+</html>
