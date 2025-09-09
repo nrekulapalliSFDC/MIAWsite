@@ -16,25 +16,23 @@
     <footer>
         <p>Contact: myemail@example.com</p>
     </footer>
-    <script type='text/javascript'>
-        function initEmbeddedMessaging() {
-            try {
-                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-
-                embeddedservice_bootstrap.init(
-                    '00DKd000006mBkT',
-                    'SDO_Messaging_for_Web',
-                    'https://amyerwin-241117-595-demo.my.site.com/ESWSDOMessagingforWeb1731865188511',
-                    {
-                        scrt2URL: 'https://amyerwin-241117-595-demo.my.salesforce-scrt.com'
-                    }
-                );
-            } 
-            catch (err) {
-                console.error('Error loading Embedded Messaging: ', err);
-            }
-        };
-    </script>
-    <script type='text/javascript' src='https://amyerwin-241117-595-demo.my.site.com/ESWSDOMessagingforWeb1731865188511/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.init(
+				'00DcY000002ZOMT',
+				'HardRock_SubDomains_Deployment',
+				'https://seminolehardrocksupportservices--agentforce.sandbox.my.site.com/ESWHardRockSubDomainsDe1747254170337',
+				{
+					scrt2URL: 'https://seminolehardrocksupportservices--agentforce.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://seminolehardrocksupportservices--agentforce.sandbox.my.site.com/ESWHardRockSubDomainsDe1747254170337/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
